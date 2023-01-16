@@ -40,6 +40,7 @@ const CardActionButton = (props: { item: CocktailInterface }) => {
           variant="contained"
           size="small"
           sx={{ width: "100%" }}
+          color="error"
           onClick={() => removeFromFavouriteHandler(item.idDrink)}
         >
           Remove from favourite{" "}

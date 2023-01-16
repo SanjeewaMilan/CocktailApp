@@ -6,7 +6,7 @@ export interface CocktailInterface {
   strDrinkThumb: string;
   strCategory: string;
   idDrink: string;
-  favourite?: boolean;
+  //favourite?: boolean;
 }
 
 const initialState: Array<CocktailInterface> = [];

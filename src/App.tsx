@@ -5,6 +5,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Favourite from "./pages/Favourite";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   let theme = createTheme({
@@ -20,10 +21,12 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/favourites" element={<Favourite />} />
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/favourites" element={<Favourite />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
